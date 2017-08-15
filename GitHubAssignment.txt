@@ -1,0 +1,54 @@
+Pauls-MacBook-Pro:HTML paulfranco$ mkdir GitHubRepoAssignment
+Pauls-MacBook-Pro:HTML paulfranco$ ls
+GitHubRepoAssignment	Indentation.html	about.txt
+Pauls-MacBook-Pro:HTML paulfranco$ cd GitHubRepoAssignment
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git init
+Initialized empty Git repository in /Users/paulfranco/Desktop/DojoAssignments/WebFundamentals/HTML/GitHubRepoAssignment/.git/
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ touch readme.md
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ ls
+readme.md
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ nano readme.md
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git remote add origin https://github.com/pafm99/GitHubRepoAssignment.git
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/pafm99/GitHubRepoAssignment.git'
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git add .
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git commit -m "first commit for this assignment"
+[master (root-commit) e7ee35c] first commit for this assignment
+ Committer: Paul Franco <paulfranco@Pauls-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ git status
+On branch master
+nothing to commit, working tree clean
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ touch GitHubAssignment.txt
+Pauls-MacBook-Pro:GitHubRepoAssignment paulfranco$ nano GitHubAssignment.txt
